@@ -1,4 +1,4 @@
-//Übung 06
+//Ãœbung 06
 //bearbeitet von Jasmine Cavael & Alexander Chmielus
 //Tutorium 10, Fabian Halama (Do. 16-18)
 
@@ -38,7 +38,7 @@ def root(n):
 		
 				k = k + 1 
 	
-			{INV ? ¬B} = {(r == S(k -1) ? (S(k -1) + S(k - 2)) < n) ? (r + r + k) = n}
+			{INV ? Â¬B} = {(r == S(k -1) ? (S(k -1) + S(k - 2)) < n) ? (r + r + k) = n}
  
  
  {Q} = {(k -1)^2 < n = k^2}
@@ -86,8 +86,8 @@ public boolean equal(Rectangle r) {
 }
 
 public int compareAreaTo(Rectangle r) {
-	int area1 = this.width * this.height;	//Fläche des 1. Rechtecks
-	int area51 = r.width * r.height;		//Fläche des 2. Rechtecks
+	int area1 = this.width * this.height;	//FlÃ¤che des 1. Rechtecks
+	int area51 = r.width * r.height;		//FlÃ¤che des 2. Rechtecks
 	if (area1 == area51) {					//Vergleich
 		return 0;
 	} else if (area1 > area51) {
@@ -108,8 +108,8 @@ public boolean contains(Rectangle r) {
 }
 
 public boolean overlaps(Rectangle r) {
-//Wenn mind. 2 Seiten von r teilweise, oder komplett im Rechteck liegen, gibt es eine Überlappung.
-//Eigentlich wäre es ja keine Überlappung, wenn ein Rechteck komplett im anderen ist (= 4 Seiten enthalten), aber Esponda sieht das anscheinend anders. Daher nehmen wir das mit rein
+//Wenn mind. 2 Seiten von r teilweise, oder komplett im Rechteck liegen, gibt es eine Ãœberlappung.
+//Eigentlich wÃ¤re es ja keine Ãœberlappung, wenn ein Rechteck komplett im anderen ist (= 4 Seiten enthalten), aber Esponda sieht das anscheinend anders. Daher nehmen wir das mit rein
 //x und y markieren den Punkt der linken oberen Ecke.
 //Das sind die 4 Seiten des 1. Rechtecks:
 	int first_left = this.x;
@@ -188,7 +188,7 @@ public static Rectangle smallestBoundingRectangle (Rectangle[] recs) {
 		if (x > recs[i+1].x) {		//Am weitesten linke Seite
 			x = recs[i+1].x;
 		}
-		if (y > recs[i+1].y) {		//Höchste Seite
+		if (y > recs[i+1].y) {		//HÃ¶chste Seite
 			y = recs[i+1].y;
 		}
 		if (width < recs[i+1].width + recs[i+1].x) {	//Am weitesten rechte Seite
